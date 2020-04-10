@@ -47,5 +47,31 @@ namespace MaximunUsingGenerics
             }
             return max;
         }
+
+        /// <StringMaximum>
+        /// method to find maximum of three Strings
+        /// </StringMaximum>
+        /// <param name="stringValue1"> 1 </param>
+        /// <param name="stringValue1"> 2 </param>
+        /// <param name="stringValue1"> 3 </param>
+        /// <returns> maximum string </returns>
+        public string StringMaximum(string stringValue1, string stringValue2, string stringValue3)
+        {
+            int lenth1 = stringValue1.Length;
+            int lenth2 = stringValue2.Length;
+            int lenth3 = stringValue3.Length;
+            if(lenth1>lenth2 && lenth1>lenth3)
+            {
+                return stringValue1;
+            }
+            else if(lenth2>lenth1 && lenth2>lenth3)
+            {
+                return stringValue2;
+            }
+            else
+            {
+                return stringValue3;
+            }
+        }
     }
 }

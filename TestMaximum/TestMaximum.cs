@@ -43,5 +43,22 @@ namespace Tests
             float returnMaximum = maxNumber.floatMaximum(floatValue1, floatValue2, floatValue3);
             Assert.Pass("9.65F", returnMaximum);
         }
+
+        /// <FloatTest>
+        /// taken 3 float values
+        /// maxNumber as object of Maximum class
+        /// parameterised floatMaximum method is called
+        /// Compared returnMaximum value to expected vaule
+        /// </FloatTest>
+        [Test]
+        public void StringTest()
+        {
+            string stringValue1 = "Amit",
+                stringValue2 = "Omkara",
+                stringValue3 = "Rushi";
+            Maximum maxNumber = new Maximum();
+            string returnMaximum = maxNumber.StringMaximum(stringValue1, stringValue2, stringValue3);
+            Assert.Pass("Omkara", returnMaximum);
+        }
     }
 }
