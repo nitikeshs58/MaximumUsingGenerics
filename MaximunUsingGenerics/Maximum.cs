@@ -44,11 +44,13 @@ namespace MaximunUsingGenerics
            if(value1.CompareTo(value2)>0)
             {
                 if(value1.CompareTo(value3) >0)
-                { 
+                {
+                    printMax(value1);
                     return value1; 
                 }
                 else
                 {
+                    printMax(value3);
                     return value3;
                 }
             }
@@ -56,15 +58,22 @@ namespace MaximunUsingGenerics
             {
                 if (value2.CompareTo(value3) > 0)
                 {
-
+                    
+                    printMax(value2);
                     return value2;
                 }
                 else
                 {
-                    return value3;
+                    var v = value2.CompareTo(value3);
+                    printMax(value3);
+                    return value3;                    
                 }
             }
-        } 
+        }
+        public void printMax(T returnMaximumValue)
+        {
+            Console.WriteLine("Max Value: " + returnMaximumValue);
+        }
         
     }
 }

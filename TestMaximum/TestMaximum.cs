@@ -32,7 +32,7 @@ namespace Tests
         [Test]
         public void FloatTest()
         {
-            Maximum<float> maxNumber = new Maximum<float>(5.2F, 2.34F, 9.65F);
+            Maximum<float> maxNumber = new Maximum<float>(5.2F, 9.65F, 2.34F);
             Assert.Pass("9.65F", maxNumber.returnValue);
         }
 
@@ -45,8 +45,8 @@ namespace Tests
         [Test]
         public void StringTest()
         {
-            Maximum<string> maxNumber = new Maximum<string>("Amit", "Omkara", "Rushi");
-            Assert.Pass("Omkara", maxNumber.returnValue);
+            Maximum<string> maxNumber = new Maximum<string>("Amit", "Smkara", "Rushi");
+            Assert.Pass("Smkara", maxNumber.returnValue);
         }
     }
 }
