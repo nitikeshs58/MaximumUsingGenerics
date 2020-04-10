@@ -22,8 +22,8 @@ namespace Tests
             int interger1 = 5,
                 interger2 = 2,
                 interger3 = 9;
-            Maximum maxNumber = new Maximum();
-            int returnMaximum=maxNumber.IntergerMaximum(interger1, interger2, interger3);
+            Maximum<int> maxNumber = new Maximum<int>();
+            int returnMaximum=maxNumber.maximumVaule(interger1, interger2, interger3);
             Assert.Pass("9", returnMaximum);
         }
 
@@ -39,8 +39,8 @@ namespace Tests
             float floatValue1 = 5.2F,
                 floatValue2 = 2.34F,
                 floatValue3 = 9.65F;
-            Maximum maxNumber = new Maximum();
-            float returnMaximum = maxNumber.floatMaximum(floatValue1, floatValue2, floatValue3);
+            Maximum<float> maxNumber = new Maximum<float>();
+            float returnMaximum = maxNumber.maximumVaule(floatValue1, floatValue2, floatValue3);
             Assert.Pass("9.65F", returnMaximum);
         }
 
@@ -56,8 +56,8 @@ namespace Tests
             string stringValue1 = "Amit",
                 stringValue2 = "Omkara",
                 stringValue3 = "Rushi";
-            Maximum maxNumber = new Maximum();
-            string returnMaximum = maxNumber.StringMaximum(stringValue1, stringValue2, stringValue3);
+            Maximum<string> maxNumber = new Maximum<string>();
+            string returnMaximum = maxNumber.maximumVaule(stringValue1, stringValue2, stringValue3);
             Assert.Pass("Omkara", returnMaximum);
         }
     }
